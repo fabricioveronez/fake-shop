@@ -34,8 +34,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db.init_app(app)
 migrate = Migrate(app, db)
 
-teste =+ "teste"
-
 def generate_order_number():
     """Gera um número de pedido único com 6 dígitos."""
     return f'{random.randint(100000, 999999)}'
